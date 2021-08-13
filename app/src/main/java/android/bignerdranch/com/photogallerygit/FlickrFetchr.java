@@ -24,6 +24,7 @@ public class FlickrFetchr {
             byte[] buffer = new byte[1024];
             while ((byteRead = in.read(buffer)) > 0) {
                 out.write(buffer, 0, byteRead);
+                //desktop test
             }
             out.close();
             return out.toByteArray();
