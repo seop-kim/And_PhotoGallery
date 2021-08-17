@@ -35,4 +35,8 @@ public class GalleryItem {
     public void setUrl(String url) {
         mUrl = url;
     }
+
+    public String getCustomToString() {
+        return "ID : " + mId + ", Title : " + mCaption;
+    }
 }
