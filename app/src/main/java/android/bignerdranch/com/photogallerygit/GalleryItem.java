@@ -37,6 +37,6 @@ public class GalleryItem {
     }
 
     public String getCustomToString() {
-        return "ID : " + mId + ", Title : " + mCaption;
+        return "ID : " + mId + ", Title : " + mCaption + ", url : " + mUrl;
     }
 }
