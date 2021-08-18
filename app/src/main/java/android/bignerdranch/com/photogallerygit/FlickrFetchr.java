@@ -81,7 +81,7 @@ public class FlickrFetchr {
 
             item.setUrl(photoJsonObject.getString("url_s"));
             items.add(item);
-            Log.d("parseItems", "item : " + item.toString());
+            Log.d("parseItems", "item : " + item.getCustomToString());
         }
     }
 
