@@ -1,4 +1,4 @@
-package android.bignerdranch.com.photogallerygit;
+package seop.bignerdranch.com.photogallerygit;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -44,7 +44,7 @@ public class ThumbnailDownloader<T> extends HandlerThread {
 
     public void queueThumbnail(T target, String url) {
         Log.i(TAG, "Got a URL : " + url);
-
+        Log.d(TAG, "실행시점 확인용");
         if (url == null) {
             mRequestMap.remove(target);
         } else {
@@ -75,6 +75,7 @@ public class ThumbnailDownloader<T> extends HandlerThread {
             }
             byte[] bitmapBytes = new FlickrFetchr().getUrlBytes(url);
             final Bitmap bitmap = BitmapFactory.decodeByteArray(bitmapBytes, 0, bitmapBytes.length);
+            Log.d(TAG, "비트맵 생성 시점 표기");
             Log.i(TAG, "Bitmap created");
 
             mResponseHandler.post(new Runnable() {

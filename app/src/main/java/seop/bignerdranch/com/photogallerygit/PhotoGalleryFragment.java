@@ -1,4 +1,6 @@
-package android.bignerdranch.com.photogallerygit;
+package seop.bignerdranch.com.photogallerygit;
+
+import seop.bignerdranch.com.photogallerygit.ThumbnailDownloader;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -93,7 +95,6 @@ public class PhotoGalleryFragment extends Fragment {
             mItems = galleryItems;
             setupAdapter();
         }
-
     }
 
     private class PhotoHolder extends RecyclerView.ViewHolder {

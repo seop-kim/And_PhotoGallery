@@ -1,4 +1,4 @@
-package android.bignerdranch.com.photogallerygit;
+package seop.bignerdranch.com.photogallerygit;
 
 import android.os.Bundle;
 
